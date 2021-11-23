@@ -67,10 +67,14 @@ public class AdvancedForLoops {
     }
 
     public static void main(String[] args) {
+        System.out.println("Eights");
         eights();
+        System.out.println("Alternates");
         alternate(6);
         alternate(5);
+        System.out.println("Isosceles");
         isosceles(5);
+        System.out.println("Upside Down");
         upSideDown(9, 5);
     }
 }
