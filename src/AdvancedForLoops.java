@@ -52,8 +52,8 @@ public class AdvancedForLoops {
     }
 
     private static void upSideDown(int n1, int n2) {
-        for (int i = 1; i <= (n1-n2); i++) {
-            for (int j = 0; j < i - i; j++) {
+        for (int i = 0; i <= (n1-n2); i++) {
+            for (int j = 0; j < i; j++) {
                 System.out.print(" ");
             }
             for(int k = n1 - i; k >= n2; k--){
@@ -62,30 +62,15 @@ public class AdvancedForLoops {
             for(int l = n2 + 1; l <= n1 - i; l++){
                 System.out.print(l);
             }
-        }
-    }
-
-    public static void upSideDoawn(int num1, int num2){
-        for(int i = 0; i <= num1 - num2; i++){
-            for(int c = 0; c < i; c++){
-                System.out.print(" ");
-            }
-            for(int j = num1 - i; j >= num2; j--){
-                System.out.print(j);
-            }
-            for(int k = num2 + 1; k <= num1 - i; k++){
-                System.out.print(k);
-            }
             System.out.println();
         }
     }
 
     public static void main(String[] args) {
         eights();
-        //alternate(6);
-        //alternate(5);
+        alternate(6);
+        alternate(5);
         isosceles(5);
         upSideDown(9, 5);
     }
-
 }
